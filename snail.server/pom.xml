@@ -7,8 +7,13 @@
   </parent>
   <artifactId>snail.server</artifactId>
   <packaging>pom</packaging>
-  <name>snail-server</name>
+  
+  <!-- 模块信息 -->
   <modules>
   	<module>snail.server.common</module>
   </modules>
+  
+  <!-- 工程信息 -->
+  <name>snail-server</name>
+  <url>https://github.com/isxujin/snail/server</url>
 </project>

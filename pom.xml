@@ -1,13 +1,284 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.macxcode</groupId>
-  <artifactId>snail</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>snail-framework</name>
-  <modules>
-  	<module>snail.server</module>
-  	<module>snail.client</module>
-  	<module>snail.runtime</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.macxcode</groupId>
+	<artifactId>snail</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<!-- 模块信息 -->
+	<modules>
+		<module>snail.server</module>
+		<module>snail.client</module>
+		<module>snail.runtime</module>
+	</modules>
+	<!-- 工程信息 -->
+	<name>snail-framework</name>
+	<url>https://github.com/isxujin/snail</url>
+	<description>Snail-J2EE开发框架</description>
+	<!-- 组织信息 -->
+	<organization>
+		<name>org.macxcode</name>
+		<url>https://github.com/isxujin</url>
+	</organization>
+	<!--许可证信息 -->
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<!-- 开发人员信息 -->
+	<developers>
+		<developer>
+			<name>xujin</name>
+			<email>isxujin@gmail.com</email>
+			<url>https://github.com/isxujin</url>
+			<roles>
+				<role>software engineer</role>
+			</roles>
+			<timezone>8</timezone>
+		</developer>
+	</developers>
+	<!-- 版本控制信息 -->
+	<scm>
+		<url>https://github.com/isxujin/snail/</url>
+		<connection>scm:git:git://github.com/isxujin/snail.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:isxujin/snail.git</developerConnection>
+	</scm>
+	<!-- 缺陷跟踪信息 -->
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/isxujin/snail/issues</url>
+	</issueManagement>
+	<!-- 持续继承信息 -->
+	<ciManagement>
+		<system>continuum</system>
+		<url>https://travis-ci.org/isxujin/snail</url>
+		<notifiers>
+			<notifier>
+				<type>mail</type>
+				<sendOnError>true</sendOnError>
+				<sendOnFailure>true</sendOnFailure>
+				<sendOnSuccess>true</sendOnSuccess>
+				<sendOnWarning>false</sendOnWarning>
+				<configuration>
+					<address>isxujin@gmail.com</address>
+				</configuration>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+
+	<!-- Mven仓库配置 -->
+	<repositories>
+		<repository>
+			<id>oschina Releases</id>
+			<name>oschina Releases</name>
+			<url>http://maven.oschina.net/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>apache-repo</id>
+			<name>apache Repository</name>
+			<url>https://repository.apache.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>java-repo</id>
+			<name>java Repository</name>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+		<repository>
+			<id>springsource-repo</id>
+			<name>SpringSource Repository</name>
+			<url>http://repo.spring.io/release/</url>
+		</repository>
+		<repository>
+			<id>springsource-repo-snapshot</id>
+			<name>SpringSource Repository</name>
+			<url>http://repo.spring.io/snapshot/</url>
+		</repository>
+		<repository>
+			<id>cloudhopper</id>
+			<name>Repository for Cloudhopper</name>
+			<url>http://maven.cloudhopper.com/repos/third-party/</url>
+		</repository>
+		<repository>
+			<id>jboss-repo-releases</id>
+			<name>Jboss Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<layout>default</layout>
+			<url>http://repo.maven.apache.org/maven2</url>
+		</repository>
+		<repository>
+			<id>maven-repo1</id>
+			<name>maven-repo1</name>
+			<layout>default</layout>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>sourceforge-releases</id>
+			<name>Sourceforge Releases</name>
+			<url>https://oss.sonatype.org/content/repositories/sourceforge-releases</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>oschina Releases</id>
+			<name>oschina Releases</name>
+			<url>http://maven.oschina.net/content/groups/public</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>maven2-repo</id>
+			<name>maven2 Repository</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>Codehaus repository</id>
+			<url>http://repository.codehaus.org/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>maven-db-plugin-repo</id>
+			<name>maven db plugin repository</name>
+			<url>https://maven-db-plugin.googlecode.com/svn/maven/repo</url>
+			<layout>default</layout>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<!-- 参数定义 -->
+	<properties>
+		<jdk.version>1.6</jdk.version>
+		<build.encoding>UTF-8</build.encoding>
+		<build.test.skip>false</build.test.skip>
+		<site.locales>zh_CN</site.locales>		
+	</properties>
+
+	<!-- 编译配置 -->
+	<build>
+		<!-- Maven插件管理 -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.3.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.5.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.5</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.4</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.3</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.17</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${build.encoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireJavaVersion>
+									<version>${jdk.version}</version>
+								</requireJavaVersion>								
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<locales>${site.locales}</locales>
+					<outputEncoding>${build.encoding}</outputEncoding>
+					<inputEncoding>${build.encoding}</inputEncoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+                    <argLine>-Xmx128M</argLine>
+                    <includes>
+                        <include>**/Test*.java</include>
+                        <include>**/*Test.java</include>
+                        <include>**/*IT.java</include>
+                        <include>**/*TestCase.java</include>
+                    </includes>
+                    <skip>${build.test.skip}</skip>
+                </configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+                    <warName>${project.artifactId}</warName>
+                </configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
