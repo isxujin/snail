@@ -2,13 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.macxcode</groupId>
-    <artifactId>snail</artifactId>
+    <artifactId>snail.client</artifactId>
     <version>1.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>snail.client</artifactId>
-  <packaging>pom</packaging>
-  <name>snail-client</name>
-  <modules>
-  	<module>snail.client.common</module>
-  </modules>
+  <artifactId>snail.client.common</artifactId>
+  <name>snail-client-common</name>
 </project>
