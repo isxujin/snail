@@ -1,15 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.macxcode</groupId>
+	<groupId>org.openquantum</groupId>
 	<artifactId>snail</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<!-- 模块信息 -->
 	<modules>
-		<module>snail.server</module>
-		<module>snail.client</module>
-		<module>snail.runtime</module>
+		<module>snail.lib</module>
+		<module>snail.common</module>
+		<module>snail.api</module>
+		<module>snail.core</module>
+		<module>snail.mvc</module>
+		<module>snail.webapp</module>
 	</modules>
 	<!-- 工程信息 -->
 	<name>snail-framework</name>
@@ -17,7 +20,7 @@
 	<description>Snail-J2EE开发框架</description>
 	<!-- 组织信息 -->
 	<organization>
-		<name>org.macxcode</name>
+		<name>org.openquantum</name>
 		<url>https://github.com/isxujin</url>
 	</organization>
 	<!--许可证信息 -->
@@ -31,7 +34,7 @@
 	<developers>
 		<developer>
 			<name>xujin</name>
-			<email>isxujin@gmail.com</email>
+			<email>xujin@icloud.com</email>
 			<url>https://github.com/isxujin</url>
 			<roles>
 				<role>software engineer</role>
@@ -62,7 +65,7 @@
 				<sendOnSuccess>true</sendOnSuccess>
 				<sendOnWarning>false</sendOnWarning>
 				<configuration>
-					<address>isxujin@gmail.com</address>
+					<address>xujin@icloud.com</address>
 				</configuration>
 			</notifier>
 		</notifiers>

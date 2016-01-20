@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.openquantum</groupId>
+    <artifactId>snail</artifactId>
+    <version>${project.version}</version>
+  </parent>
+  <artifactId>snail.mvc</artifactId>
+  <packaging>pom</packaging>
+  
+	<!-- 工程信息 -->
+	<name>snail-mvc</name>
+	<url>https://github.com/isxujin/snail/mvc</url>
+
+    <!-- 依赖 -->
+    <dependencies>
+        <dependency>
+			<groupId>org.openquantum</groupId>
+			<artifactId>snail.lib</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.openquantum</groupId>
+			<artifactId>snail.common</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.openquantum</groupId>
+			<artifactId>snail.api</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+		</dependency>
+    </dependencies>
+
+    <!-- 编译配置 -->
+	<build>
+		
+	</build>
+	<modules>
+		<module>snail.mvc.sample</module>
+	</modules>
+</project>

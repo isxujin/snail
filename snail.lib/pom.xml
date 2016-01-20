@@ -1,22 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.macxcode</groupId>
-		<artifactId>snail</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>snail.client</artifactId>
-	<packaging>pom</packaging>
-
-	<!-- 模块信息 -->
-	<modules>
-		<module>snail.client.common</module>
-	</modules>
-
-	<!-- 工程信息 -->
-	<name>snail-client</name>
-	<url>https://github.com/isxujin/snail/client</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.openquantum</groupId>
+    <artifactId>snail</artifactId>
+    <version>${project.version}</version>
+  </parent>
+  <artifactId>snail.lib</artifactId>
+  <packaging>pom</packaging>
+  
+  <!-- 工程信息 -->
+	<name>snail-lib</name>
+	<url>https://github.com/isxujin/snail/lib</url>
 
 	<!-- 参数 -->
     <properties>
@@ -453,4 +447,5 @@
 	<build>
 		
 	</build>
+	
 </project>
