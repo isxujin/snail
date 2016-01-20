@@ -26,4 +26,7 @@
 	<build>
 		
 	</build>
+	<modules>
+		<module>snail.common.base</module>
+	</modules>
 </project>
