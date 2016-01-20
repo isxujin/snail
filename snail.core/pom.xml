@@ -38,4 +38,7 @@
 	<build>
 		
 	</build>
+	<modules>
+		<module>snail.core.sample</module>
+	</modules>
 </project>

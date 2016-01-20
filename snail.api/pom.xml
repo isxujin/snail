@@ -32,4 +32,7 @@
 	<build>
 		
 	</build>
+	<modules>
+		<module>snail.api.sample</module>
+	</modules>
 </project>
