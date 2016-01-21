@@ -13,22 +13,10 @@
 	<url>https://github.com/isxujin/snail/core</url>
 
     <!-- 依赖 -->
-    <dependencies>
-        <dependency>
-			<groupId>org.openquantum</groupId>
-			<artifactId>snail.lib</artifactId>
-			<version>${project.version}</version>
-			<type>pom</type>
-		</dependency>
+    <dependencies>        
 		<dependency>
 			<groupId>org.openquantum</groupId>
 			<artifactId>snail.common</artifactId>
-			<version>${project.version}</version>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>org.openquantum</groupId>
-			<artifactId>snail.api</artifactId>
 			<version>${project.version}</version>
 			<type>pom</type>
 		</dependency>

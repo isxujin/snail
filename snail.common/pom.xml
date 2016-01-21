@@ -1,32 +1,24 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.openquantum</groupId>
-    <artifactId>snail</artifactId>
-    <version>${project.version}</version>
-  </parent>
-  <artifactId>snail.common</artifactId>
-  <packaging>pom</packaging>
-  
-  <!-- 工程信息 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.openquantum</groupId>
+		<artifactId>snail</artifactId>
+		<version>${project.version}</version>
+	</parent>
+	<artifactId>snail.common</artifactId>
+	<packaging>pom</packaging>
+
+	<!-- 工程信息 -->
 	<name>snail-common</name>
 	<url>https://github.com/isxujin/snail/common</url>
 
-    <!-- 依赖 -->
-    <dependencies>
-        <dependency>
-			<groupId>org.openquantum</groupId>
-			<artifactId>snail.lib</artifactId>
-			<version>${project.version}</version>
-			<type>pom</type>
-		</dependency>
-    </dependencies>
-
-    <!-- 编译配置 -->
+	<!-- 编译配置 -->
 	<build>
-		
+
 	</build>
 	<modules>
 		<module>snail.common.base</module>
+		<module>snail.common.framwork</module>
 	</modules>
 </project>
