@@ -34,5 +34,6 @@
 	</build>
 	<modules>
 		<module>snail.api.sample</module>
+		<module>snail.api.openquantum</module>
 	</modules>
 </project>

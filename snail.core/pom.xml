@@ -40,5 +40,6 @@
 	</build>
 	<modules>
 		<module>snail.core.sample</module>
+		<module>snail.core.openquantum</module>
 	</modules>
 </project>

@@ -21,3 +21,5 @@ hs_err_pid*
 snail.webapp/snail.webapp.sample/.settings/org.eclipse.wst.common.project.facet.core.xml
 *.container
 snail.webapp/snail.webapp.sample/.settings/org.eclipse.wst.jsdt.ui.superType.name
+snail.webapp/snail.webapp.openquantum/.settings/org.eclipse.wst.common.project.facet.core.xml
+*.name

@@ -40,5 +40,6 @@
 	</build>
 	<modules>
 		<module>snail.mvc.sample</module>
+		<module>snail.mvc.openquantum</module>
 	</modules>
 </project>

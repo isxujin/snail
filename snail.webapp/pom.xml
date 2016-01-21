@@ -278,5 +278,6 @@
     </profiles>
 	<modules>
 		<module>snail.webapp.sample</module>
+		<module>snail.webapp.openquantum</module>
 	</modules>
 </project>
